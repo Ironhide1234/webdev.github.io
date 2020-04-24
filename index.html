@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Олимпиада</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+    <!-- MOBILE MARKUP -->
+
+    <div id="burger-btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+
+    <nav id="mobile-nav">
+        <div class="logo">
+            <img src="img/logo.png" alt="Большая олимпиада 4">
+        </div>
+        <ul>
+            <a href="#">
+                <li>Описание</li>
+            </a>
+            <a href="#">
+                <li>Предметы</li>
+            </a>
+            <a href="#">
+                <li>Задания</li>
+            </a>
+            <a href="#">
+                <li>Призы</li>
+            </a>
+            <a href="#">
+                <li>Инструкция</li>
+            </a>
+            <a href="#">
+                <li>Отзывы</li>
+            </a>
+        </ul>
+        <div class="sign-btns">
+            <button class="login">Вход</button>
+            <button class="register">Регистрация</button>
+        </div>
+    </nav>
+
+    <div id="request-btn-mobile">
+        <button>ПОДАТЬ ЗАЯВКУ</button>
+    </div>
+
+    <div id="popup-background"></div>
+
+    <div class="olimpiada-request" id="popup-window">
+        <form>
+            <div id="popup-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div class="request-info">
+                <div class="app-title">ПОДАЧА ЗАЯВКИ</div>
+                <p class="price-rise">Успей до повышения цены</p>
+                <div class="select" id="select-btn-mobile">Выберите предмет<i class="fa fa-angle-up" aria-hidden="true"></i></div>
+                <input type="text" placeholder="ФИО учителя" required>
+                <input type="email" placeholder="Ваш e-mail" required>
+                <input type="password" placeholder="Придумайте пароль" required>
+                <div class="participants-num">
+                    <div id="quantity-btn"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                    <p>К-во учеников</p>
+                    <div class="number-box">
+                        <div id="minus-btn-mob">
+                            <i class="fa fa-minus" aria-hidden="true"></i>
+                        </div>
+                        <span id="participants-num-mob">10</span>
+                        <div id="plus-btn-mob">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="request-payment">
+                <div class="fee">
+                    <p>Взнос с 1 ученика</p>
+                    <span><strike>119р.</strike> 59 р.</span>
+                </div>
+                <div class="fee">
+                    <p>Взнос с N учеников</p>
+                    <span>590 р</span>
+                </div>
+                <div class="fee">
+                    <p>Из них Вам на расходы</p>
+                    <span>350 р</span>
+                </div>
+                <div class="fee">
+                    <p>Итого к оплате</p>
+                    <span>240 р</span>
+                </div>
+            </div>
+            <div class="app-submit">
+                <button type="submit">ПОДАТЬ ЗАЯВКУ</button>
+                <p class="promocode" id="promo-btn-mobile">Есть промокод?</p>
+                <div class="agreement">
+                    <p>Принимаю условия <u>договора-оферты</u></p>
+                    <p>Получить компенсацию на расходы</p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- MOBILE MARKUP END -->
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="img/logo.png" alt="Большая олимпиада 4">
+                </div>
+                <ul>
+                    <a href="#">
+                        <li>Описание</li>
+                    </a>
+                    <a href="#">
+                        <li>Предметы</li>
+                    </a>
+                    <a href="#">
+                        <li>Задания</li>
+                    </a>
+                    <a href="#">
+                        <li>Призы</li>
+                    </a>
+                    <a href="#">
+                        <li>Инструкция</li>
+                    </a>
+                    <a href="#">
+                        <li>Отзывы</li>
+                    </a>
+                </ul>
+                <div class="sign-btns">
+                    <button class="login">Вход</button>
+                    <button class="register">Регистрация</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-18 col-md-24">
+
+                <section class="main-olympiade">
+
+                    <div class="olympiade-info">
+                        <span class="extended">Продлено</span>
+                        <span class="count">IV МЕЖДУНАРОДНАЯ</span>
+                        <h3 class="main-title">БОЛЬШАЯ ОЛИМПИАДА</h3>
+                        <div class="main-subtitle">
+                            <span class="main-subtitle-prestige">Престижные международные дистанционные олимпиады для ДУ, школ и СПО</span>
+                            <span class="main-subtitle-regnum">Рег. № организатора 1176733004370.<br>Образовательная лицензия №5257</span>
+                        </div>
+                        <div class="main-feedback">
+                            <div class="main-button main-button-1">
+                                <div class="main-button-number-1">1</div>
+                                <span class="main-button__span main-button__span-1"><strong>Прием заявок</strong> по 11 февраля</span>
+                            </div>
+                            <div class="main-button main-button-2">
+                                <div class="main-button-number-2">2</div>
+                                <span class="main-button__span main-button__span-2"><strong>Прием ответов</strong><br>с 11 февраля</span>
+                            </div>
+                            <div class="main-button main-button-3">
+                                <div class="main-button-number-3">3</div>
+                                <span class="main-button__span main-button__span-3"><strong>Итоги</strong><br>c 04 марта</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="appeal">
+                        <div class="appeal-wrap  appeal-wrap__1">
+                            <div class="appeal-info">
+                                <h2 class="appeal-title__teachers">Учителям</h2>
+                                <ul class="options">
+                                    <li><strong>премиальные 50₽</strong></li>
+                                    <li>медианар или педтест <sup class="appeal-sup">бесплатно</sup></li>
+                                    <li>курс КПК бесплатно</li>
+                                    <li>благодарственные грамоты<br><sup class="appeal-sup">(на школу и родителям)</sup></li>
+                                    <li>котируемые наградные<br> документы <sup class="appeal-sup">(всем)</sup></li>
+                                </ul>
+                            </div>
+                            <img src="img/appeal/Vector_Smart_Object.png" alt="">
+                        </div>
+                        <div class="appeal-wrap appeal-wrap__2">
+                            <div class="appeal-info">
+                                <h2 class="appeal-title__students">ученикам</h2>
+                                <ul class="options">
+                                    <li class="li"><strong>всего 49₽ к оплате</strong></li>
+                                    <li class="li">интересные задания</li>
+                                    <li class="li">просмотр ошибок</li>
+                                    <li class="li">красочные дипломы <sup class="appeal-sup">(каждому)</sup></li>
+                                    <li class="li">секретный подарок <sup class="appeal-sup">(каждому)</sup></li>
+                                </ul>
+                            </div>
+                            <img src="img/appeal/Vector_Smart_Object26.png" alt="">
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="big-olympiade">
+
+                    <h2>IV БОЛЬШАЯ ОЛИМПИАДА</h2>
+                    <p class="olympiade-text">Это международный конкурс, который проходит в третий раз с тысячами участников из России и всего мира. Участвовать просто, полезно и интересно. Олимпиада направлена на формирование мотивации к учебе, подготовку к экзаменам, конкурсам
+                        и олимпиадам, проводимым под эгидой просвещения России.</p>
+                    <div class="olympiade-features">
+                        <div class="feature">
+                            <img src="img/olympiade_feature_1.png">
+                            <p>Увлекательные и развивающие задания</p>
+                        </div>
+                        <div class="feature">
+                            <img src="img/olympiade_feature_2.png">
+                            <p>Удобное внесение ответов онлайн</p>
+                        </div>
+                        <div class="feature">
+                            <img src="img/olympiade_feature_3.png">
+                            <p>13 олимпиад по разным предметам</p>
+                        </div>
+                    </div>
+                    <p class="olympiade-application">Заявки могут подаваться на обучающихся школ, ДУ и СПО. Указание статуса олимпиад, организатора и штрихкода на всех выдаваемых документах гарантирует их котируемость.</p>
+                    <div class="olympiade-advantages">
+                        <div class="advantage">
+                            <div class="img_box">
+                                <img src="img/olympiade-advantage-1.png">
+                            </div>
+                            <strong>Участников</strong>
+                            <div class="people_num">>231 000</div>
+                            <p>учеников</p>
+                        </div>
+                        <div class="advantage">
+                            <div class="img_box">
+                                <img src="img/olympiade-advantage-2.png">
+                            </div>
+                            <strong>Уже оценило</strong>
+                            <div class="people_num">>32 000</div>
+                            <p>педагогов</p>
+                        </div>
+                        <div class="advantage">
+                            <div class="img_box">
+                                <img src="img/olympiade-advantage-3.png">
+                            </div>
+                            <strong>Международный статус</strong>
+                            <div class="people_num">>23</div>
+                            <p>стран</p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="available-items">
+
+                    <div class="available-items-header">
+                        <div class="text">
+                            <h2>ДОСТУПНЫЕ<br>ПРЕДМЕТЫ</h2>
+                            <p>Участвовать просто. Выберите номинацию, чтобы подать заявку</p>
+                        </div>
+                        <div class="image">
+                            <img src="img/available-items-header.png">
+                        </div>
+                    </div>
+                    <div class="lessons-container">
+                        <div class="sec-high-school">
+                            <div class="sec-high-school-title">
+                                Средняя и старшая<br>школа
+                            </div>
+                            <div class="sec-high-school-content">
+                                <ul>
+                                    <li>«Безопасный островок»</li>
+                                    <li>Английский язык</li>
+                                    <li>Биология</li>
+                                    <li>География</li>
+                                    <li>Информатика</li>
+                                    <li>История</li>
+                                </ul>
+                                <ul>
+                                    <li class="free">Математика</li>
+                                    <li>Обществознание</li>
+                                    <li>Русский язык и литература</li>
+                                    <li>Химия</li>
+                                    <li>Физика</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="primary-school">
+                            <div class="primary-school-title">
+                                Начальная школа<br>и дошкольники
+                            </div>
+                            <div class="primary-school-content">
+                                <ul>
+                                    <li>«Безопасный островок»</li>
+                                    <li>«Волшебная шкатулка»</li>
+                                    <li>«Безопасный островок»</li>
+                                    <li>«Битва умов»</li>
+                                    <li>Английский язык</li>
+                                    <li>Математика</li>
+                                    <li>Русский язык и литература</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="reward">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="reward-greeting">
+                                <div class="teacher-img">
+                                    <img src="img/reward-section/teacher.png" alt="">
+                                </div>
+                                <div class="reward-text">
+                                    <h3 class="reward-title">НАГРАДЫ ДЛЯ ПЕДАГОГОВ</h3>
+                                    <span class="reward-subtitle">Каждый педагог или координатор делает очень полезную работу, развивая
+                                        мотивацию к учебе у своих учеников. Специально для организаторов мы подготовили поощрительные
+                                        призы.</span>
+                                </div>
+                            </div>
+                            <div class="guar-wrap col-lg-8">
+                                <img src="img/reward-section/pig.png" alt="">
+                                <h2 class="guar-text">Компенсация расходов<br>50₽ за ученика</h2>
+                                <span class="guar-concrete">каждому</span>
+                            </div>
+                            <div class="guar-wrap col-lg-8">
+                                <div class="guar-abs-1">Всем</div>
+                                <img src="img/reward-section/certf-1.png" alt="">
+                                <h2 class="guar-text">Свидетельство координатора олимпиады<img src="img/reward-section/question-icon.png" alt="">
+                                </h2>
+                                <span class="guar-concrete">координатору, который оформил заявку</span>
+                            </div>
+                            <div class="guar-wrap col-lg-8">
+                                <img src="img/reward-section/certf-3.png" alt="">
+                                <h2 class="guar-text">Грамота за подготовку победителей
+                                </h2>
+                                <span class="guar-concrete">педагогу</span>
+                            </div>
+                            <div class="guar-wrap col-lg-8">
+                                <img src="img/reward-section/certf-3.png" alt="">
+                                <h2 class="guar-text">Благодарность педагогу
+                                </h2>
+                                <span class="guar-concrete">всем педагогам, указанным в заявках</span>
+                            </div>
+                            <div class="guar-wrap col-lg-8">
+                                <div class="guar-abs-2">Распределено</div>
+                                <img src="img/reward-section/monitor.png" alt="">
+                                <h2 class="guar-text">Любой педтест или медианар бесплатно
+                                </h2>
+                                <span class="guar-concrete">за регистрацию 15 участников</span>
+                            </div>
+                            <div class="guar-wrap col-lg-8">
+                                <div class="guar-abs-1">Всем</div>
+                                <img src="img/reward-section/tablet.png" alt="">
+                                <h2 class="guar-text">Любой курс КПК бесплатно
+                                </h2>
+                                <span class="guar-concrete">всем за регистрацию 29 участников<sup class="guar-sup">3</sup></span>
+                            </div>
+                            <div class="guar-wrap col-lg-8">
+                                <img src="img/reward-section//greet-letter.png" alt="">
+                                <h2 class="guar-text">Благодарственное письмо родителям
+                                </h2>
+                                <span class="guar-concrete">за регистрацию 3 участников</span>
+                            </div>
+                            <div class="guar-wrap col-lg-8">
+                                <div class="guar-abs-2">Распределено</div>
+                                <img src="img/reward-section/certf-3.png" alt="">
+                                <h2 class="guar-text">Благодарность в учреждение образования
+                                </h2>
+                                <span class="guar-concrete">за регистрацию 7 участников</span>
+                            </div>
+                            <div class="guar-wrap col-lg-8">
+                                <img src="img/reward-section/present.png" alt="">
+                                <h2 class="guar-text">Cекретный подарок
+                                </h2>
+                                <span class="guar-concrete">от организатора для 3 самых активных педагогов<sup
+                                        class="guar-sup">4</sup></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="limit-info">
+
+                    <h3 class="limit-title">
+                        Количество наградных документов ограничено и доступно для первых<br> 129 участников<sup class="limit-sup">5</sup>
+                    </h3>
+                    <div class="limit-inter">
+                        <button class="limit-button">Подать заявку</button>
+                        <span class="limit-descr">и заморозить свои<br> наградные документы</span>
+                    </div>
+
+                </section>
+
+                <section class="reward-students">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="reward-greeting-students">
+                                <div class="students-img">
+                                    <img src="img/reward-section-students/students.png" alt="">
+                                </div>
+                                <div class="reward-text">
+                                    <h3 class="reward-title">НАГРАДЫ<br>ДЛЯ УЧЕНИКОВ</h3>
+                                    <span class="reward-subtitle">Чтобы результаты были осязаемы, мы подготовили<br> специальные награды
+                                        для всех учеников. Проигравших нет!</span>
+                                </div>
+                            </div>
+                            <div class="reward-students-wrap col-lg-8">
+                                <img src="img/reward-section-students/mal-1-pol.png" alt="">
+                                <h2 class="reward-students-text">Диплом I степени</h2>
+                                <span class="reward-students-concrete">всем, кто наберет наибольшее количество баллов</span>
+                            </div>
+                            <div class="reward-students-wrap col-lg-8">
+                                <img src="img/reward-section-students/mal-1-pol.png" alt="">
+                                <h2 class="reward-students-text">Диплом II степени</h2>
+                                <span class="reward-students-concrete">всем вторым по количеству баллов ребятам</span>
+                            </div>
+                            <div class="reward-students-wrap col-lg-8">
+                                <img src="img/reward-section-students/mal-1-pol.png" alt="">
+                                <h2 class="reward-students-text">Диплом III степени</h2>
+                                <span class="reward-students-concrete">всем третьим по количеству баллов ребятам</span>
+                            </div>
+                            <div class="reward-students-wrap col-lg-8">
+                                <img src="img/reward-section-students/mal-1-pol.png" alt="">
+                                <h2 class="reward-students-text">Диплом участника</h2>
+                                <span class="reward-students-concrete">всем участникам, не вошедшим в призеры</span>
+                            </div>
+                            <div class="prize col-lg-16">
+                                <div class="secret-prize">
+                                    <div class="prize-img">
+                                        <img src="img/reward-section-students/students-section-pres.png" alt="">
+                                    </div>
+                                    <div class="prize-text">
+                                        <h2 class="prize-title">Секретный подарок</h2>
+                                        <span class="prize-subtitle">Получат участники, которые успеют подать заявку первыми!</span>
+                                        <button class="prize-button">Подать заявку</button>
+                                        <span class="left"><b>Осталось 102</b> бесплатных подарка<sup class="prize-sup">5</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="participate-order">
+
+                    <h2>ПОРЯДОК УЧАСТИЯ</h2>
+                    <div class="participate-order-box">
+                        <div class="participate-item-1">
+                            <div class="big-num">1</div>
+                            <div class="img-box">
+                                <img src="img/participate-item-1.png">
+                            </div>
+                            <strong>По 11 февраля</strong>
+                            <button>Подать заявку</button>
+                            <p><u>Оплатите заявку</u> и получите свидетельство.</p>
+                        </div>
+                        <div class="participate-item-2">
+                            <div class="big-num">2</div>
+                            <div class="img-box">
+                                <img src="img/participate-item-2.png">
+                            </div>
+                            <strong>С 10 февраля</strong>
+                            <p><u>Скачайте</u> задания в личном кабинете.<br><br>Проведите олимпиаду, соберите ответы учеников и внесите их в кабинете ИЛИ раздайте ссылки и коды из Вашего личного кабинета ученикам для самостоятельного участия.</p>
+                        </div>
+                        <div class="participate-item-3">
+                            <div class="big-num">3</div>
+                            <div class="img-box">
+                                <img src="img/participate-item-3.png">
+                            </div>
+                            <strong>По окончании олимпиады</strong>
+                            <p>Получите наградные документы и призы.<br><br>Участники могут получить награды сами по своим ссылкам.</p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="participant-reviews">
+
+                    <h2>ОТЗЫВЫ УЧАСТНИКОВ</h2>
+                    <p class="participant-reviews-text">Что говорят участники «I и II Большой школьной олимпиады»</p>
+                    <button>Оставить отзыв</button>
+                    <div class="reviews-box" id="reviews-slider">
+                        <div class="slider-box">
+                            <div class="review">
+                                <div class="info-box">
+                                    <img src="img/reviews/participant-reviews-1.png">
+                                    <p><strong>Атрощенко В.П.</strong><br>Смоленск</p>
+                                </div>
+                                <p>Очень понравилась олимпиада! Принимала участие уже во многих, но эта значительно отличается! Ведь мало того, что есть большой выбор предметов, так ещё и такие приятные подарки, причем для всех участвующих. Интересный и оригинальный
+                                    формат. Также очень порадовала цена и простота подачи заявки - всё прошло очень быстро. Получила больше эмоций, чем ожидала!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slider-box">
+                            <div class="review">
+                                <div class="info-box">
+                                    <img src="img/reviews/participant-reviews-2.png">
+                                    <p><strong>Донец А. В.</strong><br>Омск</p>
+                                </div>
+                                <p>Побольше бы таких конкурсов! Всё на высшем уровне: призы, увлекательные задания, постановка задач, четкий регламент. Радует и сертификат, полученный в конце, и возможность вносить ответы прямо на сайте. Очень быстро приняли
+                                    заявку и зарегистрировали. Остались только приятные воспоминания! Буду очень рада принять участие ещё!</p>
+                            </div>
+                        </div>
+                        <div class="slider-box">
+                            <div class="review">
+                                <div class="info-box">
+                                    <img src="img/reviews/participant-reviews-1.png">
+                                    <p><strong>Атрощенко В.П.</strong><br>Смоленск</p>
+                                </div>
+                                <p>Очень понравилась олимпиада! Принимала участие уже во многих, но эта значительно отличается! Ведь мало того, что есть большой выбор предметов, так ещё и такие приятные подарки, причем для всех участвующих. Интересный и оригинальный
+                                    формат. Также очень порадовала цена и простота подачи заявки - всё прошло очень быстро. Получила больше эмоций, чем ожидала!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="unique-task">
+                    <h3 class="unique-task-title">УНИКАЛЬНЫЕ ЗАДАНИЯ</h3>
+                    <span class="unique-task-subtitle">Задания подходят большинству учеников. Ребятам предстоит за строго отведенное
+                        время в 45 минут (или 50 минут при прохождении конкурса самостоятельно) решить как можно больше заданий. За
+                        каждое задание начисляется один балл. Победителей и призеров может быть любое количество, в случае если
+                        несколько учеников набирают одинаковое количество баллов</span>
+
+                    <span class="unique-task-subtitle-1">Задания будут доступны с 10 февраля в Вашем личном кабинете. Не позднее 2 марта
+                        скачайте и распечатайте задания, проведите в удобное время олимпиаду со своими учениками, соберите ответы и
+                        отправьте их нам через раздел «Мои заявки» в Вашем личном кабинете. По желанию Вы можете раздать ученикам
+                        ссылки, опубликованные в Вашем личном кабинете, чтобы они приняли участие в олимпиаде самостоятельно (результаты
+                        и награды будут по-прежнему доступны в Вашем кабинете).</span>
+                    <div id="unique-slider">
+                        <img src="img/unique-slider/slaider_1.jpg">
+                        <img src="img/unique-slider/slaider_2.jpg">
+                        <img src="img/unique-slider/slaider_3.jpg">
+                    </div>
+                </section>
+
+                <div class="footer">
+                    <div class="container">
+                        <div class="footer-info">
+                            <h3 class="footer-title">ПОЛЕЗНЫЕ ФАЙЛЫ</h3>
+                            <a href="#" class="footer-link">Положение</a>
+                            <a href="#" class="footer-link">Договор и соглашение об обработке данных (договор-оферта)</a>
+                        </div>
+                        <div class="footer-text">
+                            <p><sup>1</sup> Организатор имеет право публиковать итоговую таблицу победителей с указанием имени и города победителя, а также места его учебы. Организатор обязуется поставить в известность законных представителей участника об
+                                условиях конкурса и, в случае их несогласия, не производить его регистрацию. Пять победителей по каждому из призов выбираются на усмотрение организатора. Организатор оставляет за собой право вместо приза отправить денежный
+                                перевод на эквивалентную сумму. Призы выдаются учителям-организаторам.
+                                <br><sup>2</sup> Зарегистрированным участником является ученик, участие которого оформлено через личный кабинет организатора и оплачено в полном объеме в стандартные сроки, указанные на сайте.
+                                <br><sup>3</sup> Среди владельцев личных кабинетов, зарегистрировавших и оплативших участие минимум 29 участников, распределяется любой курс КПК от организатора ООО «Знанио». Обучение производится за 49 руб. по любому курсу
+                                КПК на 72 часа на образовательном портале znanio.ru. Обучающийся при этом обязуется взять на себя расходы на печать и доставку итогового документа в размере 409 руб.
+                                <br>Самый активный участник по итогам окончания олимпиады – общее количество подавших и оплативших заявок на сайте.
+                                <br><sup>5</sup> Обновление происходит раз в 24 часа.
+                                <br><sup>6</sup> Компенсация педагогам полагается согласно договору-оферте при подаче заявки через сайт.
+                            </p>
+                        </div>
+                        <div class="offert-info">
+                            <p class="offert-text">© 2013-2019 «БОЛЬШАЯ ОЛИМПИАДА»<br>Организатор – ООО «Знанио», ИНН 6732141723</p>
+                            <a href="#" class="olymp-offert-mail">info@большая-олимпиада.рф</a>
+                            <p class="offert-ask">Хотите принять участие?</p>
+                        </div>
+                        <div class="offert-app">
+                            <div class="contacts-offert">
+                                <p>Договор-оферта</p>
+                                <p>Обратная связь</p>
+                            </div>
+                            <button class="offert-button">Подать заявку</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-md-24">
+                <div class="olimpiada-request">
+                    <form>
+                        <div class="request-info">
+                            <div class="app-title">ПОДАЧА ЗАЯВКИ</div>
+                            <p class="price-rise">Успей до повышения цены</p>
+                            <div class="select" id="select-btn"><span>Выберите предмет</span><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+                            <input type="text" placeholder="ФИО учителя" required>
+                            <input type="email" placeholder="Ваш e-mail" required>
+                            <input type="password" placeholder="Придумайте пароль" required>
+                            <div class="participants-num" id="participants-number">
+                                <p>К-во учеников</p>
+                                <div class="number-box">
+                                    <div id="minus-btn">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </div>
+                                    <span id="participants-num">10</span>
+                                    <div id="plus-btn">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="request-payment">
+                            <div class="fee">
+                                <p>Взнос с 1 ученика</p>
+                                <span><strike>119р.</strike> 59 р.</span>
+                            </div>
+                            <div class="fee">
+                                <p>Взнос с N учеников</p>
+                                <span>590 р</span>
+                            </div>
+                            <div class="fee">
+                                <p>Из них Вам на расходы</p>
+                                <span>350 р</span>
+                            </div>
+                            <div class="fee">
+                                <p>Итого к оплате</p>
+                                <span>240 р</span>
+                            </div>
+                        </div>
+                        <div class="app-submit">
+                            <button>ПОДАТЬ ЗАЯВКУ</button>
+                            <p class="promocode" id="promo-btn">Есть промокод?</p>
+                            <div class="agreement">
+                                <p>Принимаю условия <u>договора-оферты</u></p>
+                                <p>Получить компенсацию на расходы</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="request-promocode" id="promo-popup">
+                    <div id="promo-close">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                    <input type="text" placeholder="Введите Ваш промокод">
+                    <button>Отправить</button>
+                    <p id="promo-dismiss">Отменить</p>
+                </div>
+                <div class="choose-subject" id="choose-subject-popup">
+                    <div class="high-school">
+                        <div class="high-school-title">Средняя и старшая школа</div>
+                        <ul>
+                            <li><p>«В чудесном мире книг»</p><br><span class="info">межпредметная номинация ко дню детской и юношеской книги, согласно Рекомендациям Минобрнауки</span></li>
+                            <li><p>Английский язык</p><span> (5-11)</span></li>
+                            <li><p>Биология</p><span> (5-11)</span></li>
+                            <li><p>География</p><span> (5-11)</span></li>
+                            <li><p>Информатика</p><span> (5-11)</span></li>
+                            <li><p>История</p><span> (5-11)</span></li>
+                            <li><p>Математика</p><span> (5-11)</span></li>
+                            <li><p>ОБЖ</p><span> (5-11)</span></li>
+                            <li><p>Обществознание</p><span> (5-11)</span></li>
+                            <li><p>Русский язык и литература</p><span>(5-11)</span></li>
+                            <li><p>Физика</p><span> (5-11)</span></li>
+                            <li><p>Химия</p><span> (5-11)</span></li>
+                        </ul>
+                    </div>
+                    <div class="elem-school">
+                        <div class="school">
+                            <div class="elem-school-title">Начальная школа</div>
+                            <ul>
+                                <li><p>«В чудесном мире книг»</p><br><span class="info">межпредметная номинация ко дню детской и юношеской книги, согласно Рекомендациям Минобрнауки</span></li>
+                                <li><p>«Юный эрудит»</p></li>
+                                <li><p>ОБЖ</p></li>
+                                <li><p>Английский язык</p></li>
+                                <li><p>Математика</p></li>
+                                <li><p>Русский язык и литература</p></li>
+                            </ul>
+                        </div>
+                        <div class="preschool">
+                            <div class="preschool-title">Дошкольники</div>
+                            <ul>
+                                <li><p>«В чудесном мире книг»<br></p><span class="info">межпредметная номинация ко дню детской и юношеской книги, согласно Рекомендациям Минобрнауки</span></li>
+                                <li><p>«В чудесном мире книг»<br></p><span class="info">необычные и увлекательные задания для малышей</span></li>
+                                <li><p>Английский язык</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="quantity-presents" id="quantity-num">
+                    <div class="quan-pres-block">
+                        <div class="quan-students">
+                            <div class="quantity-span"><span>Кол-во учеников</span></div>
+                            <div class="quan">
+                                <span class="quan-num quan-1">1</span>
+                                <span class="quan-num quan-2">25</span>
+                                <span class="quan-num quan-3">35</span>
+                                <span class="quan-num quan-4">45</span>
+                                <span class="quan-num quan-5">65</span>
+                                <span class="quan-num quan-6">75</span>
+                                <span class="quan-num quan-7">еще 4</span>
+                                <span class="quan-num quan-8">еще 9</span>
+                                <span class="quan-num quan-9"> еще 19</span>
+                                <span class="quan-num quan-10">еще 29</span>
+                                <span class="quan-num quan-11">еще 39</span>
+                            </div>
+                        </div>
+                        <div class="pres-teachers-coord">
+                            <div class="quantity-span quantity-span-2"><span>Подарки учетилям-координаторам</span></div>
+                            <div class="quan-info">
+                                <span class="quan-info-span quan-info-1">Компенсация расходов 44Р за ученика</span>
+                                <span class="quan-info-span quan-info-2">Награды всем ученикам и учителям</span>
+                                <span class="quan-info-span quan-info-3">Сертификат координатора олимпиад</span>
+                                <span class="quan-info-span quan-info-4">Грамота за информатизацию образования</span>
+                                <span class="quan-info-span quan-info-5">Благодарность родителям</span>
+                                <span class="quan-info-span quan-info-6">Благодарность в V0</span>
+                                <span class="quan-info-span quan-info-7">Видеокурс «Эффективная школьная презентация» и коллекция  шаблонов-заготовок для создания презентаций</span>
+                                <span class="quan-info-span quan-info-8">Вебинар или тестирование бесплатно + документ </span>
+                                <span class="quan-info-span quan-info-9">Повышения квалификации бесплатно</span>
+                                <span class="quan-info-span quan-info-10">Возможность выиграть планшет</span>
+                                <span class="quan-info-span quan-info-11">Возможность выиграть нетбук</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
