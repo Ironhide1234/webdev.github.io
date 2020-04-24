@@ -1,0 +1,303 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+	
+// ≥768px
++media-breakpoint-down(sm)
+	body
+		background: url(../img/olimpiada-768.png) no-repeat 46.5% 0
+	header
+		display: none
+	.main-olympiade
+		margin-top: 150px
+	.olimpiada-request
+		display: none
+	#burger-btn
+		display: block
+	#popup-window
+		position: fixed
+		left: calc(50% - 152px)
+	#request-btn-mobile
+		display: block
+	.big-olympiade
+		margin-top: 110px
+	.olympiade-info	.main-title
+		font-size: 50px
+		line-height: 50px
+	.olympiade-info .main-subtitle
+		flex-direction: column
+		align-items: flex-start
+	.olympiade-info .main-subtitle .main-subtitle-prestige
+		max-width: none
+		margin-bottom: 10px
+	.olympiade-info .main-subtitle .main-subtitle-regnum
+		max-width: none
+	.main
+		&-feedback
+			flex-direction: column
+		&-button
+			margin-top: 15px
+	.appeal
+		flex-direction: column
+		&-wrap 
+			&__2
+				padding: 50px
+				margin-top: 20px
+		&-wrap img
+			display: none
+	.olympiade
+		&-features
+			flex-direction: column
+			.feature
+				margin-bottom: 15px
+	.olympiade-advantages
+		flex-direction: column
+	.advantage
+		margin-top: 20px	
+	.available-items-header 
+		.image
+			margin-left: 20px
+		.text p
+			margin-bottom: 20px
+	.lessons-container
+		flex-direction: column
+	.sec-high-school
+		margin-bottom: 30px
+		&-content
+			flex-direction: column
+	.primary-school
+		flex-direction: column	
+	.available-items .lessons-container .primary-school-content
+		justify-content: flex-start
+		flex-direction: column
+	.reward-greeting
+		margin: 0
+	.reward-text
+		justify-content: flex-start
+		margin: 0
+		margin-bottom: 30px
+	.guar-wrap
+		.guar-abs-1, .guar-abs-2
+			left: 23%
+	.students-img
+		display: none
+	.teacher-img
+		display: none
+	.limit
+		&-info
+			margin-top: 200px
+		&-inter
+			flex-direction: column
+		&-descr
+			margin-top: 15px
+		&-button
+			padding: 20px 50px
+	.reward-students
+		margin-top: 180px
+		.secret-prize
+			padding: 40px 50px
+	.prize
+		&-img
+			margin-bottom: 15px
+		.prize-button
+			margin: 0 auto 20px auto
+	.participate-order
+		margin-top: 120px
+		h2
+			font-size: 45px
+	.prize-text
+		margin: 0 !important
+	.secret-prize
+		text-align: center	
+		flex-direction: column
+	.participate-order-box
+		flex-direction: column
+	.participate-item
+		&-2
+			margin-top: 25px
+		&-3
+			margin-top: 25px
+	.slick-dots
+		right: 15%
+		bottom: -40px
+	.participant-reviews
+		margin-top: 220px
+		.reviews-box
+			left: 0
+			.review
+				width: auto !important
+		#prev-arrow
+			left: -6%
+		#next-arrow
+			right: -6%
+	.unique-task
+		margin-top: 200px
+	.offert
+		&-info
+			text-align: center
+			flex-direction: column
+			& > *
+				margin-bottom: 10px
+		&-app
+			flex-direction: column
+			.offert-button
+				order: -1
+				margin: 0 0 15px 0
+		&-button
+			margin-left: 30px
+	.offert-ask
+		margin: 0 !important
+	.footer
+		margin-top: 110px
+		&-text
+			margin-top: 100px
+			width: 100%
+		.offert
+			&-info
+				margin-top: 40px
+			&-ask, &-button
+				display: none
+	.choose-subject
+		flex-direction: column
+		width: 304px
+		top: calc(50% - 210px)
+		right: calc(50% - 152px)
+		max-height: 470px
+		overflow: scroll
+		.high-school
+			margin-bottom: 30px
+	.request-promocode
+		left: calc(50% - 152px)
+		bottom: calc(50% - 260px)
+	.quantity-presents
+		right: calc(50% - 152px)
+		top: calc(50% - 17px)
+		height: 260px
+		width: 304px
+		overflow: scroll
+	.quan-pres-block
+		padding: 32px 35px 28px 18px
+	.quantity-span
+		width: 76px
+		font-size: 9px
+		text-align: center
+		&-2
+			width: 152px
+	.quan
+		align-items: flex-start
+		&-info
+			width: 145px
+			&-span
+				font-size: 9px
+		&-num
+		&-1
+			margin-bottom: 30px
+		&-2
+			margin-bottom: 30px
+		&-3
+			margin-bottom: 30px
+		&-4
+			margin-bottom: 22px
+		&-5
+			margin-bottom: 14px
+		&-6
+			margin-bottom: 35px
+		&-7
+			margin-bottom: 55px
+		&-8
+			margin-bottom: 30px
+		&-9
+			margin-bottom: 25px
+		&-10
+			margin-bottom: 24px	
+
+	// ≥576px
++media-breakpoint-down(xs)
+	body
+		background: url(../img/olimpiada-320.png) no-repeat 46.5% 0
+	.olympiade-info .main-title
+		font-size: 40px
+		max-width: 300px
+	.big-olympiade, .available-items-header .text, .participant-reviews
+		h2
+			font-size: 40px
+	.available-items .lessons-container .sec-high-school-title, .available-items .lessons-container .primary-school-title
+		width: 100%
+		padding: 20px
+		text-align: right
+	.reward
+		&-title
+			font-size: 30px
+			line-height: 40px
+	.limit-title, .unique-task-title
+		font-size: 33px
+	.appeal
+		justify-content: center
+		align-items: center
+	.availible-items
+		margin-top: 30px
+	.secret-prize
+		padding: 20px 35px 20px 26px
+	.reward-students .prize-subtitle, .reward-students .prize-title
+		width: 100%
+		text-align: center
+	.prize
+		&-title
+			font-size: 16px
+			width: 125px
+		&-subtitle
+			font-size: 11px	
+			width: 125px
+		&-button
+			text-align: center
+			font-size: 12px
+			width: 125px
+			padding: 9px 24px 8px 25px
+	.participate-order-box
+		text-align: center
+		align-items: center
+	.participant-reviews #prev-arrow
+		left: -2%
+		z-index: 1
+		top: 50%
+	.participant-reviews #next-arrow
+		right: -2%
+		top: 50%
+	.footer
+		&-title
+			font-size: 40px
+	.unique-task .fa-angle-left.slick-arrow
+		z-index: 1
+	#reviews-slider 
+		.review
+			height: auto
+			padding: 35px
+			p
+				font-size: 11px
+		.slick-dots
+			bottom: -120px
+	.guar-wrap .guar-abs-1, .guar-wrap .guar-abs-2
+		left: 8%
+	#unique-slider #next-arrow, #unique-slider #prev-arrow
+		top: 35%
+	
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
